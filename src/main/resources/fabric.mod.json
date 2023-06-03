@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "magnificent_malachite",
+	"version": "${version}",
+	"name": "Magnificent Malachite",
+	"description": "Magnificent Malachite is a mod that introduces - you guessed it - malachite to the game!",
+	"authors": [
+		"DanteMinecraft",
+		"Zcloak"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/magnificent_malachite/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dantemc.magnificent_malachite.MagnificentMalachite"
+		],
+		"client": [
+			"net.dantemc.magnificent_malachite.MagnificentMalachiteClient"
+		],
+		"fabric-datagen": [
+			"net.dantemc.magnificent_malachite.MagnificentMalachiteDataGenerator"
+		]
+	},
+	"mixins": [
+		"magnificent_malachite.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
