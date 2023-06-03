@@ -4,8 +4,6 @@ import net.fabricmc.api.ModInitializer;
 
 public class MagnificentMalachite implements ModInitializer {
 	public static final String MOD_ID = "magnificent_malachite";
-//comment
-	//comment test
 	@Override
 	public void onInitialize() {
 	}
