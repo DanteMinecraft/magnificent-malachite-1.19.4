@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "malachite",
+  "ingredients": [
+    {
+      "item": "magnificent_malachite:malachite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "magnificent_malachite:malachite"
+  }
+}

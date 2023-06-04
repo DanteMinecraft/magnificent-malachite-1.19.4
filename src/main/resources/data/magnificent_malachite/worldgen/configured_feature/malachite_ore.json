@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 32,
+    "targets": [
+      {
+        "state": {
+          "Name": "magnificent_malachite:malachite_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:copper_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "Name": "magnificent_malachite:deepslate_malachite_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_copper_ore_replaceables"
+        }
+      }
+    ]
+  }
+}

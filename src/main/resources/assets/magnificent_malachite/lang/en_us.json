@@ -1,4 +1,9 @@
 {
   "item.magnificent_malachite.raw_malachite": "Raw Malachite",
+  "item.magnificent_malachite.malachite": "Raw Malachite",
+  "item.magnificent_malachite.malachite_horse_armor": "Malachite Horse Armor",
+  "block.magnificent_malachite.malachite_ore": "Malachite Ore",
+  "block.magnificent_malachite.deepslate_malachite_ore": "Deepslate Malachite Ore",
+  "block.magnificent_malachite.malachite_block": "Malachite Block",
   "itemGroup.magnificent_malachite.magnificent_malachite": "Magnificent Malachite"
 }
