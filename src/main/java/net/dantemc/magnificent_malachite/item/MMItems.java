@@ -47,14 +47,25 @@ public class MMItems {
         addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, RAW_MALACHITE);
         addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE);
         addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_HORSE_ARMOR);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_SHOVEL);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_PICKAXE);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_AXE);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_HOE);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_SWORD);
 
         //vanilla item groups
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {content.addAfter(Items.RAW_GOLD, RAW_MALACHITE);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {content.addAfter(Items.DIAMOND, MALACHITE);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_HORSE_ARMOR, MALACHITE_HORSE_ARMOR);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_AXE, MALACHITE_AXE);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_SWORD, MALACHITE_SWORD);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {content.addAfter(Items.DEEPSLATE_DIAMOND_ORE, MMBlocks.MALACHITE_ORE);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {content.addAfter(MMBlocks.MALACHITE_ORE, MMBlocks.DEEPSLATE_MALACHITE_ORE);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {content.addAfter(Items.DIAMOND_BLOCK, MMBlocks.MALACHITE_BLOCK);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {content.addAfter(Items.DIAMOND_HOE, MALACHITE_SHOVEL);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {content.addAfter(MALACHITE_SHOVEL, MALACHITE_PICKAXE);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {content.addAfter(MALACHITE_PICKAXE, MALACHITE_AXE);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {content.addAfter(MALACHITE_AXE, MALACHITE_HOE);});
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
