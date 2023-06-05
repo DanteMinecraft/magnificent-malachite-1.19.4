@@ -59,6 +59,10 @@ public class MMItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_HORSE_ARMOR, MALACHITE_HORSE_ARMOR);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_AXE, MALACHITE_AXE);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_SWORD, MALACHITE_SWORD);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_BOOTS, MALACHITE_HELMET);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(MALACHITE_HELMET, MALACHITE_CHESTPLATE);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(MALACHITE_CHESTPLATE, MALACHITE_LEGGINGS);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(MALACHITE_LEGGINGS, MALACHITE_BOOTS);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {content.addAfter(Items.DEEPSLATE_DIAMOND_ORE, MMBlocks.MALACHITE_ORE);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {content.addAfter(MMBlocks.MALACHITE_ORE, MMBlocks.DEEPSLATE_MALACHITE_ORE);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {content.addAfter(Items.DIAMOND_BLOCK, MMBlocks.MALACHITE_BLOCK);});
