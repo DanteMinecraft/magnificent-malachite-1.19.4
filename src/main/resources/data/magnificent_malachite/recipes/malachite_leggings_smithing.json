@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_leggings"
+  },
+  "addition": {
+    "item": "magnificent_malachite:malachite"
+  },
+  "result": {
+    "item": "magnificent_malachite:malachite_leggings"
+  }
+}

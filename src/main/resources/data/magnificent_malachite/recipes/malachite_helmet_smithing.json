@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "addition": {
+    "item": "magnificent_malachite:malachite"
+  },
+  "result": {
+    "item": "magnificent_malachite:malachite_helmet"
+  }
+}

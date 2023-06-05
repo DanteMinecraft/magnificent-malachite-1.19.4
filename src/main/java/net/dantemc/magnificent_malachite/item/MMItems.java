@@ -16,7 +16,7 @@ public class MMItems {
     public static final Item MALACHITE_HORSE_ARMOR = registerItem("malachite_horse_armor", new HorseArmorItem(7, "malachite",
             new FabricItemSettings().maxCount(1)));
 
-
+    //armor
     public static final Item MALACHITE_HELMET = registerItem("malachite_helmet", new ArmorItem(MMArmorMaterials.MALACHITE, ArmorItem.Type.HELMET,
             new FabricItemSettings()));
 
@@ -28,6 +28,17 @@ public class MMItems {
 
     public static final Item MALACHITE_BOOTS = registerItem("malachite_boots", new ArmorItem(MMArmorMaterials.MALACHITE, ArmorItem.Type.BOOTS,
             new FabricItemSettings()));
+    //tools
+    public static final Item MALACHITE_SHOVEL = registerItem("malachite_shovel", new ShovelItem(MMToolMaterial.MALACHITE, 1.5f, 0,
+            new FabricItemSettings()));
+    public static final Item MALACHITE_PICKAXE = registerItem("malachite_pickaxe", new PickaxeItem(MMToolMaterial.MALACHITE, 1, 0,
+            new FabricItemSettings()));
+    public static final Item MALACHITE_AXE = registerItem("malachite_axe", new AxeItem(MMToolMaterial.MALACHITE, 5, -2,
+            new FabricItemSettings()));
+    public static final Item MALACHITE_SWORD = registerItem("malachite_sword", new SwordItem(MMToolMaterial.MALACHITE, 3, 0,
+            new FabricItemSettings()));
+    public static final Item MALACHITE_HOE = registerItem("malachite_hoe", new HoeItem(MMToolMaterial.MALACHITE, -4, 0,
+            new FabricItemSettings()));
 
     //item group
     public static void addItemsToItemGroup() {
@@ -35,13 +46,36 @@ public class MMItems {
         addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, RAW_MALACHITE);
         addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE);
         addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_HORSE_ARMOR);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_HELMET);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_CHESTPLATE);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_LEGGINGS);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_BOOTS);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_SHOVEL);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_PICKAXE);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_AXE);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_HOE);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_SWORD);
 
         //vanilla item groups
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {content.addAfter(Items.RAW_GOLD, RAW_MALACHITE);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {content.addAfter(Items.DIAMOND, MALACHITE);});
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_HORSE_ARMOR, MALACHITE_HORSE_ARMOR);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_BOOTS, MALACHITE_HELMET);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(MMItems.MALACHITE_HELMET, MALACHITE_CHESTPLATE);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(MMItems.MALACHITE_CHESTPLATE, MALACHITE_LEGGINGS);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(MMItems.MALACHITE_LEGGINGS, MALACHITE_BOOTS);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_AXE, MALACHITE_AXE);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {content.addAfter(Items.DIAMOND_SWORD, MALACHITE_SWORD);});
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {content.addAfter(Items.DIAMOND_HOE, MALACHITE_SHOVEL);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {content.addAfter(MMItems.MALACHITE_SHOVEL, MALACHITE_PICKAXE);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {content.addAfter(MMItems.MALACHITE_PICKAXE, MALACHITE_AXE);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {content.addAfter(MMItems.MALACHITE_AXE, MALACHITE_HOE);});
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {content.addAfter(Items.DEEPSLATE_DIAMOND_ORE, MMBlocks.MALACHITE_ORE);});
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {content.addAfter(MMBlocks.MALACHITE_ORE, MMBlocks.DEEPSLATE_MALACHITE_ORE);});
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {content.addAfter(Items.DIAMOND_BLOCK, MMBlocks.MALACHITE_BLOCK);});
     }
 

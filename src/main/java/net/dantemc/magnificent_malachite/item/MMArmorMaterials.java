@@ -17,8 +17,8 @@ public enum MMArmorMaterials implements ArmorMaterial {
         map.put(ArmorItem.Type.LEGGINGS, 6);
         map.put(ArmorItem.Type.CHESTPLATE, 8);
         map.put(ArmorItem.Type.HELMET, 3);
-    }), 19, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.1F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_INGOT});
+    }), 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{MMItems.MALACHITE});
     });
 
     public static final StringIdentifiable.Codec<ArmorMaterials> CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);
