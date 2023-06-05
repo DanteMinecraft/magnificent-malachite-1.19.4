@@ -30,13 +30,13 @@ public class MMItems {
             new FabricItemSettings()));
 
     //tools
-    public static final Item MALACHITE_SHOVEL = registerItem("malachite_shovel", new ShovelItem(MMToolMaterial.MALACHITE, 0, 0,
+    public static final Item MALACHITE_SHOVEL = registerItem("malachite_shovel", new ShovelItem(MMToolMaterial.MALACHITE, 1.5f, 0,
             new FabricItemSettings()));
-    public static final Item MALACHITE_PICKAXE = registerItem("malachite_pickaxe", new PickaxeItem(MMToolMaterial.MALACHITE, 0, 0,
+    public static final Item MALACHITE_PICKAXE = registerItem("malachite_pickaxe", new PickaxeItem(MMToolMaterial.MALACHITE, 1, 0,
             new FabricItemSettings()));
-    public static final Item MALACHITE_AXE = registerItem("malachite_axe", new AxeItem(MMToolMaterial.MALACHITE, 4, 0,
+    public static final Item MALACHITE_AXE = registerItem("malachite_axe", new AxeItem(MMToolMaterial.MALACHITE, 5, -2,
             new FabricItemSettings()));
-    public static final Item MALACHITE_HOE = registerItem("malachite_hoe", new HoeItem(MMToolMaterial.MALACHITE, 0, 0,
+    public static final Item MALACHITE_HOE = registerItem("malachite_hoe", new HoeItem(MMToolMaterial.MALACHITE, -4, 2,
             new FabricItemSettings()));
     public static final Item MALACHITE_SWORD = registerItem("malachite_sword", new SwordItem(MMToolMaterial.MALACHITE, 3, 0,
             new FabricItemSettings()));
