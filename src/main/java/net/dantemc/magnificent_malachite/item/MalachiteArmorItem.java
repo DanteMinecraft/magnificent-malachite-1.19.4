@@ -7,6 +7,4 @@ public class MalachiteArmorItem extends ArmorItem {
     public MalachiteArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);
     }
-
-
 }

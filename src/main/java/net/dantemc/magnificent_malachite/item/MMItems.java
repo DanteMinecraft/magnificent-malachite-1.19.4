@@ -16,7 +16,7 @@ public class MMItems {
     public static final Item MALACHITE_HORSE_ARMOR = registerItem("malachite_horse_armor", new HorseArmorItem(7, "malachite",
             new FabricItemSettings().maxCount(1)));
 
-
+    //armor
     public static final Item MALACHITE_HELMET = registerItem("malachite_helmet", new ArmorItem(MMArmorMaterials.MALACHITE, ArmorItem.Type.HELMET,
             new FabricItemSettings()));
 
@@ -52,6 +52,10 @@ public class MMItems {
         addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_AXE);
         addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_HOE);
         addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_SWORD);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_HELMET);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_CHESTPLATE);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_LEGGINGS);
+        addToItemGroup(MMItemGroup.MAGNIFICENT_MALACHITE, MALACHITE_BOOTS);
 
         //vanilla item groups
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {content.addAfter(Items.RAW_GOLD, RAW_MALACHITE);});
